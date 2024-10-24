@@ -51,3 +51,17 @@ section:not(#hero):not(#cta){
     padding: 100px 0;
   }
 }
+
+.btn {
+  color: rgb(255, 255, 255);
+  background-color: #33463b;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  background-color: #33463b;
+}
+
+ul {
+  list-style: none;
+}

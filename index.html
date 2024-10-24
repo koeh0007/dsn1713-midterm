@@ -4,88 +4,130 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Midterm Assignment</title>
-    <!-- Include Bootstrap JS cdn link -->
+    <!-- Add link to Bootstrap minified CSS using CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Create style.css and add link to file here -->
+    <link rel="stylesheet" href="main.css"> <!-- Correctly placed -->
   </head>
   <body>
+    <!-- Your body content goes here -->
+  
+
 
     <header>
-      
+      <nav class="navbar navbar-expand-lg" style="background-color: #33463b;">
+        <img class="omg-fluid" src="images/daily-dish-logo.svg" width="60em" height="60em">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color: white;" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="#">Menu Plans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="#">How it Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="#">Our Recipes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="#">Contact Us</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
 
     <main>
 
       <section id="hero">
-        <div> 
-          <div>
-            <div>
-              <h1>Healthy, Delicious Meals Delivered to Your Door – Ready in Minutes!</h1>
-              <p>With Daily Dish, you can enjoy chef-crafted, wholesome meals without the hassle of meal prep, grocery shopping, or cleanup.</p>
-              <button>Get Started Today and Save Time!</button>
-            </div>
-          </div>
-        </div>
+          <div class="py-3">
+            <div class="px-4 py-5 my-8 text-center">
+              <h1 class="display-5 fw-bold">Healthy, Delicious Meals Delivered to Your Door – Ready in Minutes!</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">With Daily Dish, you can enjoy chef-crafted, wholesome meals without the hassle of meal prep, grocery shopping, or cleanup.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get Started Today and Save Time!</button>
+              </div>
       </section>
 
       <section>
-        <div>
+        <div class="text-center">
           <h2>How it Works</h2>
           <p>Say goodbye to meal planning stress! With Daily Dish, you’ll enjoy chef-crafted meals made from fresh, natural ingredients, delivered right to your door—ready to cook in minutes.</p>
           <div>
-            <div>
-              <div>
-                <img src="images/meal.svg" alt="" width="100" height="auto">
+            <div class="container px-4 py-5 my-8 text-center">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <div>
+                      <img src="images/meal.svg" alt="" width="100" height="auto">
+                    </div>
+                    <h3>Choose Your Menu</h3>
+                    <p>Explore a wide variety of delicious meal options, tailored to your dietary preferences—whether you're vegan, low-carb, or just looking for wholesome comfort food.</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <div>
+                      <img src="images/vegetables.svg" alt="" width="100" height="auto">
+                    </div>
+                    <h3>Fresh Ingredients Delivered</h3>
+                    <p>We source the freshest, highest-quality ingredients and deliver them in perfectly portioned kits. No waste, no hassle.</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <div>
+                      <img src="images/plate-fork-spoon.svg" alt="" width="100" height="auto">
+                    </div>
+                    <h3>Cook & Enjoy</h3>
+                    <p>Our easy-to-follow recipes mean you’ll have a mouthwatering, home-cooked meal ready in under 30 minutes—no kitchen skills required!</p>
+                  </div>
+                </div>
               </div>
-              <h3>Choose Your Menu</h3>
-              <p>Explore a wide variety of delicious meal options, tailored to your dietary preferences—whether you're vegan, low-carb, or just looking for wholesome comfort food.</p>
-            </div>
-            <div>
-              <div>
-                <img src="images/vegetables.svg" alt="" width="100" height="auto">
-              </div>
-              <h3>Fresh Ingredients Delivered</h3>
-              <p>We source the freshest, highest-quality ingredients and deliver them in perfectly portioned kits. No waste, no hassle.</p>
-            </div>
-            <div>
-              <div>
-                <img src="images/plate-fork-spoon.svg" alt="" width="100" height="auto">
-              </div>
-              <h3>Cook & Enjoy</h3>
-              <p>Our easy-to-follow recipes mean you’ll have a mouthwatering, home-cooked meal ready in under 30 minutes—no kitchen skills required!</p>
             </div>
           </div>
-          <button>Pick Your Plan</button>
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Pick Your Plan</button>
         </div>
+
       </section>
       
-      <section>
-        <div>
-          <h2>The Smarter Way to Eat Healthy</h2>
-          <div>
-            <div>
-              <img class="" src="images/family-eating.png" alt="Family enjoying dinner">
+
+        <section class="py-5">
+          <div class="container">
+            <h2 class="text-center px-4 py-5 my-8">The Smarter Way to Eat Healthy</h2>
+  
+            <div class="row mb-4">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="images/family-eating.png" alt="Family enjoying dinner">
+              </div>
+              <div class="col-lg-6 align-self-center">
+                <div>
+                  <ul>
+                    <li>
+                      <h3>Save Time & Stress</h3>
+                      <p>Skip the grocery store and meal prep. Everything you need is delivered—so you can focus on living, not planning.</p>
+                    </li>
+                    <li>
+                      <h3>Balanced & Nutritious</h3>
+                      <p>Each recipe is carefully crafted by nutrition experts and chefs to provide well-balanced, nourishing meals.</p>
+                    </li>
+                    <li>
+                      <h3>Customize Your Box</h3>
+                      <p>Whether you’re cooking for yourself or a family, our plans are flexible and adjustable to meet your unique needs.</p>
+                    </li>
+                  </ul>
+                </div>
             </div>
-            <div>
-              <ul>
-                <li>
-                  <h3>Save Time & Stress</h3>
-                  <p>Skip the grocery store and meal prep. Everything you need is delivered—so you can focus on living, not planning.</p>
-                </li>
-                <li>
-                  <h3>Balanced & Nutritious</h3>
-                  <p>Each recipe is carefully crafted by nutrition experts and chefs to provide well-balanced, nourishing meals.</p>
-                </li>
-                <li>
-                  <h3>Customize Your Box</h3>
-                  <p>Whether you’re cooking for yourself or a family, our plans are flexible and adjustable to meet your unique needs.</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-        </div>
+        
       </section>
 
 
@@ -133,6 +175,43 @@
 
           </div>
         </div>
+
+        <div>
+          <div class="container px-4 py-5 my-8 text-center">
+            <div class="row">
+              <div class="col">
+                <div>
+                  <div>
+                    <img src="images/meal.svg" alt="" width="100" height="auto">
+                  </div>
+                  <h3>Choose Your Menu</h3>
+                  <p>Explore a wide variety of delicious meal options, tailored to your dietary preferences—whether you're vegan, low-carb, or just looking for wholesome comfort food.</p>
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <div>
+                    <img src="images/vegetables.svg" alt="" width="100" height="auto">
+                  </div>
+                  <h3>Fresh Ingredients Delivered</h3>
+                  <p>We source the freshest, highest-quality ingredients and deliver them in perfectly portioned kits. No waste, no hassle.</p>
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <div>
+                    <img src="images/plate-fork-spoon.svg" alt="" width="100" height="auto">
+                  </div>
+                  <h3>Cook & Enjoy</h3>
+                  <p>Our easy-to-follow recipes mean you’ll have a mouthwatering, home-cooked meal ready in under 30 minutes—no kitchen skills required!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Pick Your Plan</button>
+      </div>
+
       </section>
 
 
@@ -169,7 +248,7 @@
         <div>
           <div>
             <h2>Join Thousands of Time-Savers – Start Eating Better Today!</h2>
-            <button>Sign Up and Get 30% Off Your First Week</button>
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Sign Up and Get 30% Off Your First Week</button>
           </div>
         </div>
       </section>
@@ -199,4 +278,4 @@
     
     <!-- Include Bootstrap JS cdn link -->
   </body>
-</html>
+  </html>
