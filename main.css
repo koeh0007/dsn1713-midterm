@@ -2,7 +2,19 @@
 
 /* Set custom variables here */
 
+:root {
+  --primary: #2e483a;
+  --light: #F6F3ED;
 
+
+  --bs-primary: ##2e483a;
+  --bs-primary-rgb: rgb(46, 72, 58);
+
+  --bs-light: #F6F3ED;
+  --bs-light-rgb: rgb(246, 243, 237);
+
+
+}
 
 
 
@@ -12,6 +24,7 @@
 
 body {
   font-family: "Sarala", sans-serif;
+  background-color: var(--light);
 }
 
 h1, h2, h3 {
@@ -54,13 +67,14 @@ section:not(#hero):not(#cta){
 
 .btn {
   color: rgb(255, 255, 255);
-  background-color: #33463b;
+  background-color: var(--primary);
+  outline: none;
 }
 
-button {
-  color: rgb(255, 255, 255);
-  background-color: #33463b;
+.btn:focus {
+  outline: none;
 }
+
 
 ul {
   list-style: none;
